@@ -4,7 +4,6 @@ import './Documentation.css';
 const Documentation = () => {
   return (
     <div className="documentation">
-      <h1>Documentation</h1>
       <h2>Introduction</h2>
       <p>
         This API contains information on 26 concert venues in Denver, Colorado, and 136 concerts that occured at these venues. Each venue entry contains an address and venue name, while each concert entry contains a date, name of band that performed, and the venue where the concert took place. The information was gathered using a web scraper on data from <a href="https://www.concertarchives.org/locations/denver-co">concert archives</a>, while addresses of venues were added manually.</p>
@@ -19,18 +18,18 @@ const Documentation = () => {
       <h2>Resources</h2>
 
       <div className="sample-request-response">
-        <h3>GET</h3>
+        <h3 className="methods">GET</h3>
         <p>Request:</p>
         <pre><code>/api/v1/venues</code></pre>
         <p>This endpoint will return an array of all venue objects.</p>
         <p>Response:</p>
         <pre><code>{/* SAMPLE RESPONSE */}</code></pre>
         <ul>Attributes:
-          <li><code>id</code> <em>number</em>-- venue unique id</li>
-          <li><code>name</code> <em>string</em>-- venue name</li>
-          <li><code>address</code> <em>string</em>-- venue location</li>
-          <li><code>created_at</code> <em>string</em>-- venue unique creation timestamp</li>
-          <li><code>updated_at</code> <em>string</em>-- venue unique update timestamp</li>
+          <li><code className="list-code">id</code> <em>number</em>-- venue unique id</li>
+          <li><code className="list-code">name</code> <em>string</em>-- venue name</li>
+          <li><code className="list-code">address</code> <em>string</em>-- venue location</li>
+          <li><code className="list-code">created_at</code> <em>string</em>-- venue unique creation timestamp</li>
+          <li><code className="list-code">updated_at</code> <em>string</em>-- venue unique update timestamp</li>
         </ul>
         <hr />
 
@@ -40,11 +39,11 @@ const Documentation = () => {
         <p>Example Response:</p>
         <pre><code>{/* SAMPLE RESPONSE */}</code></pre>
         <ul>Attributes:
-          <li><code>id</code> <em>number</em>-- venue unique id</li>
-          <li><code>name</code> <em>string</em>-- venue name</li>
-          <li><code>address</code> <em>string</em>-- venue location</li>
-          <li><code>created_at</code> <em>string</em>-- venue unique creation timestamp</li>
-          <li><code>updated_at</code> <em>string</em>-- venue unique update timestamp</li>
+          <li><code className="list-code">id</code> <em>number</em>-- venue unique id</li>
+          <li><code className="list-code">name</code> <em>string</em>-- venue name</li>
+          <li><code className="list-code">address</code> <em>string</em>-- venue location</li>
+          <li><code className="list-code">created_at</code> <em>string</em>-- venue unique creation timestamp</li>
+          <li><code className="list-code">updated_at</code> <em>string</em>-- venue unique update timestamp</li>
         </ul>
         <hr />
 
@@ -55,12 +54,12 @@ const Documentation = () => {
         <p>Response:</p>
         <pre><code>{/* SAMPLE RESPONSE */}</code></pre>
         <ul>Attributes:
-          <li><code>id</code> <em>number</em>-- concert unique id</li>
-          <li><code>band</code> <em>string</em>-- band name</li>
-          <li><code>date</code> <em>string</em>-- concert date</li>
-          <li><code>venue_id</code> <em>number</em>-- corresponding venue id</li>
-          <li><code>created_at</code> <em>string</em>-- concert unique creation timestamp</li>
-          <li><code>updated_at</code> <em>string</em>-- concert unique update timestamp</li>
+          <li><code className="list-code">id</code> <em>number</em>-- concert unique id</li>
+          <li><code className="list-code">band</code> <em>string</em>-- band name</li>
+          <li><code className="list-code">date</code> <em>string</em>-- concert date</li>
+          <li><code className="list-code">venue_id</code> <em>number</em>-- corresponding venue id</li>
+          <li><code className="list-code">created_at</code> <em>string</em>-- concert unique creation timestamp</li>
+          <li><code className="list-code">updated_at</code> <em>string</em>-- concert unique update timestamp</li>
         </ul>
         <hr />
 
@@ -71,12 +70,12 @@ const Documentation = () => {
         <p>Example Response:</p>
         <pre><code>{/* SAMPLE RESPONSE */}</code></pre>
         <ul>Attributes:
-          <li><code>id</code> <em>number</em>-- concert unique id</li>
-          <li><code>band</code> <em>string</em>-- band name</li>
-          <li><code>date</code> <em>string</em>-- concert date</li>
-          <li><code>venue_id</code> <em>number</em>-- corresponding venue id</li>
-          <li><code>created_at</code> <em>string</em>-- concert unique creation timestamp</li>
-          <li><code>updated_at</code> <em>string</em>-- concert unique update timestamp</li>
+          <li><code className="list-code">id</code> <em>number</em>-- concert unique id</li>
+          <li><code className="list-code">band</code> <em>string</em>-- band name</li>
+          <li><code className="list-code">date</code> <em>string</em>-- concert date</li>
+          <li><code className="list-code">venue_id</code> <em>number</em>-- corresponding venue id</li>
+          <li><code className="list-code">created_at</code> <em>string</em>-- concert unique creation timestamp</li>
+          <li><code className="list-code">updated_at</code> <em>string</em>-- concert unique update timestamp</li>
         </ul>
         <hr />
 
@@ -87,16 +86,16 @@ const Documentation = () => {
         <p>Example Response:</p>
         <pre><code>{/* SAMPLE RESPONSE */}</code></pre>
         <ul>Attributes:
-          <li><code>concerts</code> <em>array</em>-- an array of concerts by venue</li>
-          <li><code>venue_id</code> <em>number</em>-- corresponding venue id</li>
-          <li><code>band</code> <em>string</em>-- band name</li>
-          <li><code>date</code> <em>string</em>-- concert date</li>
-          <li><code>id</code> <em>number</em>-- concert unique id</li>
+          <li><code className="list-code">concerts</code> <em>array</em>-- an array of concerts by venue</li>
+          <li><code className="list-code">venue_id</code> <em>number</em>-- corresponding venue id</li>
+          <li><code className="list-code">band</code> <em>string</em>-- band name</li>
+          <li><code className="list-code">date</code> <em>string</em>-- concert date</li>
+          <li><code className="list-code">id</code> <em>number</em>-- concert unique id</li>
         </ul>
       </div>
 
       <div className="sample-request-response">
-        <h3>POST</h3>
+        <h3 className="methods">POST</h3>
         <p>Request:</p>
         <pre><code>/api/v1/venues</code></pre>
         <p>This endpoint allows users to add a new venue to the database. The request must contain a name and address property in order for the post to be successful. If these properties are not included, an error with status code 422 will be returned.
@@ -104,9 +103,9 @@ const Documentation = () => {
         <p>Response:</p>
         <pre><code>{/* SAMPLE RESPONSE */}</code></pre>
         <ul>Attributes:
-          <li><code>name</code> <em>string</em>-- venue name</li>
-          <li><code>id</code> <em>number</em>-- venue unique id</li>
-          <li><code>address</code> <em>string</em>-- venue location</li>
+          <li><code className="list-code">name</code> <em>string</em>-- venue name</li>
+          <li><code className="list-code">id</code> <em>number</em>-- venue unique id</li>
+          <li><code className="list-code">address</code> <em>string</em>-- venue location</li>
         </ul>
         <hr />
 
@@ -118,17 +117,17 @@ const Documentation = () => {
         <p>Response:</p>
         <pre><code>{/* SAMPLE RESPONSE */}</code></pre>
         <ul>Attributes:
-          <li><code>band</code> <em>string</em>-- band name</li>
-          <li><code>date</code> <em>string</em>-- concert date</li>
-          <li><code>venue_id</code> <em>number</em>-- corresponding venue id</li>
-          <li><code>id</code> <em>number</em>-- concert unique id</li>
+          <li><code className="list-code">band</code> <em>string</em>-- band name</li>
+          <li><code className="list-code">date</code> <em>string</em>-- concert date</li>
+          <li><code className="list-code">venue_id</code> <em>number</em>-- corresponding venue id</li>
+          <li><code className="list-code">id</code> <em>number</em>-- concert unique id</li>
         </ul>
         <hr />
 
       </div>
 
       <div className="sample-request-response">
-        <h3>PUT</h3>
+        <h3 className="methods">PUT</h3>
         <p>Example Request:</p>
         <pre><code>/api/v1/venues/:id
 </code></pre>
@@ -137,9 +136,9 @@ const Documentation = () => {
         <p>Example Response:</p>
         <pre><code>{/* SAMPLE RESPONSE */}</code></pre>
         <ul>Attributes:
-        <li><code>name</code> <em>string</em>-- venue name</li>
-          <li><code>id</code> <em>number</em>-- venue unique id</li>
-          <li><code>address</code> <em>string</em>-- venue location</li>
+        <li><code className="list-code">name</code> <em>string</em>-- venue name</li>
+          <li><code className="list-code">id</code> <em>number</em>-- venue unique id</li>
+          <li><code className="list-code">address</code> <em>string</em>-- venue location</li>
         </ul>
         <hr />
 
@@ -151,15 +150,15 @@ const Documentation = () => {
         <p>Example Response:</p>
         <pre><code>{/* SAMPLE RESPONSE */}</code></pre>
         <ul>Attributes:
-          <li><code>band</code> <em>string</em>-- band name</li>
-          <li><code>date</code> <em>string</em>-- concert date</li>
-          <li><code>venue_id</code> <em>number</em>-- corresponding venue id</li>
-          <li><code>id</code> <em>number</em>-- concert unique id</li>
+          <li><code className="list-code">band</code> <em>string</em>-- band name</li>
+          <li><code className="list-code">date</code> <em>string</em>-- concert date</li>
+          <li><code className="list-code">venue_id</code> <em>number</em>-- corresponding venue id</li>
+          <li><code className="list-code">id</code> <em>number</em>-- concert unique id</li>
         </ul>
       </div>
 
       <div className="sample-request-response">
-        <h3>DELETE</h3>
+        <h3 className="methods">DELETE</h3>
         <p>Example Request:</p>
         <pre><code>/api/v1/venues/:id
 </code></pre>
@@ -169,9 +168,9 @@ const Documentation = () => {
         <p>Example Response:</p>
         <pre><code>{/* SAMPLE RESPONSE */}</code></pre>
         <ul>Attributes:
-        <li><code>name</code> <em>string</em>-- venue name</li>
-          <li><code>id</code> <em>number</em>-- venue unique id</li>
-          <li><code>address</code> <em>string</em>-- venue location</li>
+        <li><code className="list-code">name</code> <em>string</em>-- venue name</li>
+          <li><code className="list-code">id</code> <em>number</em>-- venue unique id</li>
+          <li><code className="list-code">address</code> <em>string</em>-- venue location</li>
         </ul>
         <hr />
 
@@ -184,7 +183,7 @@ const Documentation = () => {
         <p>Example Response:</p>
         <pre><code>{/* SAMPLE RESPONSE */}</code></pre>
         <ul>Attributes:
-          <li><code>id</code> <em>number</em>-- concert unique id</li>
+          <li><code className="list-code">id</code> <em>number</em>-- concert unique id</li>
         </ul>
       </div>
 
