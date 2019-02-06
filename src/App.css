@@ -24,3 +24,12 @@ h1 {
 h3 {
   color: #9a6d68;
 }
+
+footer {
+  width: 65%;
+  margin: auto;
+}
+
+.contributors {
+  margin-left: 23em;
+}
