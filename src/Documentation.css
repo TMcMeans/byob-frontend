@@ -1,0 +1,37 @@
+.documentation {
+  width: 65%;
+  margin: auto;
+}
+
+h2 {
+  color: #9a6d68;
+}
+
+.methods {
+  color: #fff;
+}
+
+a {
+  color: #9a6d68;
+  text-decoration: none;
+}
+
+code {
+  background-color: #2C6772;
+  padding: .6em;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 14em;
+  margin-left: 20em;
+}
+
+.list-code {
+  font-size: .8em;
+}
