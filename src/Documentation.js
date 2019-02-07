@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Documentation.css';
+import * as apiCalls from './helper/apiCalls';
 
 class Documentation extends Component {
   constructor() {
@@ -17,6 +18,34 @@ class Documentation extends Component {
       sampleDeleteVenue: {},
       sampleDeleteConcert: {}
     }
+  }
+
+  componentDidMount = async () => {
+    const allVenues = await apiCalls.fetchAllVenues();
+    const allConcerts = await apiCalls.fetchAllConcerts();
+    const venueById = await apiCalls.fetchVenue(1);
+    const concertById = await apiCalls.fetchConcert(1);
+    const concertsByVenue = await apiCalls.fetchConcertsByVenue(1);
+    const postedVenue = await apiCalls.postVenue({ name: 'Baller Venue', address: '321 Fake St.' });
+    const postedConcert = await apiCalls.postConcert({ band: 'Nonos', date: 'Jan. 19, 1999', venue_id: 1 });
+    const updatedVenue = await apiCalls.updateVenue({ name: 'Dunghole', address: '123 Dump St.', id: 1 });
+    const updatedConcert = await apiCalls.updateConcert({ band: 'Nononos', date: 'Jan. 20, 1999', venue_id: 1 });
+    const deletedVenue = await apiCalls.deleteVenue({1});
+    const deletedConcert = await apiCalls.deleteConcert({1});
+
+    this.setState({
+      sampleVenues: allVenues,
+      sampleConcerts: allConcerts,
+      sampleOneVenue: venueById,
+      sampleOneConcert: concertById,
+      sampleConcertsByVenue: concertsByVenue,
+      samplePostVenue: postedVenue,
+      samplePostConcert: postedConcert,
+      sampleUpdateVenue: updatedVenue,
+      sampleUpdateConcert: updatedConcert,
+      sampleDeleteVenue: deletedVenue,
+      sampleDeleteConcert: deletedConcert
+    })
   }
 
   render() {
