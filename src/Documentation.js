@@ -4,7 +4,19 @@ import './Documentation.css';
 class Documentation extends Component {
   constructor() {
     super()
-
+    this.state = {
+      sampleVenues: [],
+      sampleConcerts: [],
+      sampleOneVenue: [],
+      sampleOneConcert: [],
+      sampleConcertsByVenue: [],
+      samplePostVenue: {},
+      samplePostConcert: {},
+      sampleUpdateVenue: {},
+      sampleUpdateConcert: {},
+      sampleDeleteVenue: {},
+      sampleDeleteConcert: {}
+    }
   }
 
   render() {
@@ -39,7 +51,7 @@ class Documentation extends Component {
           </ul>
           <hr />
 
-          <p> Example Request:</p>
+          <p>Example Request:</p>
           <pre><code>/api/v1/venues/:id</code></pre>
           <p>This endpoint will return an array a single venue object. The id of the venue is contained in the path.</p>
           <p>Example Response:</p>
