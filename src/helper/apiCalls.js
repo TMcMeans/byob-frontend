@@ -142,7 +142,7 @@ export const deleteVenue = async (venue_id) => {
 }
 
 export const deleteConcert = async (concert_id) => {
-  const url = `https://byob-concerts.herokuapp.com/api/v1/concerts?venue=${concert_id}`;
+  const url = `https://byob-concerts.herokuapp.com/api/v1/concerts/${concert_id}`;
   const response = fetch(url, {
     method: 'DELETE',
     headers: {
