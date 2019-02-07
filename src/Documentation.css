@@ -23,14 +23,16 @@ code {
   border-radius: 5px;
 }
 
+.response-code {
+  line-height: 3em;
+}
+
 ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: flex-start;
   height: 14em;
-  margin-left: 20em;
 }
 
 .list-code {
