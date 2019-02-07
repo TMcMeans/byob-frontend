@@ -30,8 +30,8 @@ class Documentation extends Component {
     const postedConcert = await apiCalls.postConcert({ band: 'Nonos', date: 'Jan. 19, 1999', venue_id: 1 });
     const updatedVenue = await apiCalls.updateVenue({ name: 'Dunghole', address: '123 Dump St.', id: 1 });
     const updatedConcert = await apiCalls.updateConcert({ band: 'Nononos', date: 'Jan. 20, 1999', venue_id: 1 });
-    const deletedVenue = await apiCalls.deleteVenue({1});
-    const deletedConcert = await apiCalls.deleteConcert({1});
+    const deletedVenue = await apiCalls.deleteVenue(1);
+    const deletedConcert = await apiCalls.deleteConcert(1);
 
     this.setState({
       sampleVenues: allVenues,
