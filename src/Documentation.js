@@ -70,13 +70,13 @@ class Documentation extends Component {
           <p>This endpoint will return an array of all venue objects.</p>
           <p>Response:</p>
           <pre><code className="response-code">
-          HTTP / 200 OK <br />
-          "Content-Type": "application/json" <br />
-          "id": 1,
+            HTTP / 200 OK <br />
+            "Content-Type": "application/json" <br />
+            "id": 1,
           "name": "Soiled Dove Underground", <br />
-          "address": "7401 E 1st Ave, Denver, CO 80230", <br />
-          "created_at": "2019-02-05T14:51:49.359Z", <br />
-          "updated_at": "2019-02-05T14:51:49.359Z"
+            "address": "7401 E 1st Ave, Denver, CO 80230", <br />
+            "created_at": "2019-02-05T14:51:49.359Z", <br />
+            "updated_at": "2019-02-05T14:51:49.359Z"
           </code></pre>
           <ul>Attributes:
             <li><code className="list-code">id</code> <em>number</em>-- venue unique id</li>
@@ -92,13 +92,13 @@ class Documentation extends Component {
           <p>This endpoint will return an array a single venue object. The id of the venue is contained in the path.</p>
           <p>Example Response:</p>
           <pre><code className="response-code">
-          HTTP / 200 OK <br />
-          "Content-Type": "application/json" <br />
-          "id": 1,
+            HTTP / 200 OK <br />
+            "Content-Type": "application/json" <br />
+            "id": 1,
           "name": "Soiled Dove Underground", <br />
-          "address": "7401 E 1st Ave, Denver, CO 80230", <br />
-          "created_at": "2019-02-05T14:51:49.359Z", <br />
-          "updated_at": "2019-02-05T14:51:49.359Z"
+            "address": "7401 E 1st Ave, Denver, CO 80230", <br />
+            "created_at": "2019-02-05T14:51:49.359Z", <br />
+            "updated_at": "2019-02-05T14:51:49.359Z"
           </code></pre>
           <ul>Attributes:
             <li><code className="list-code">id</code> <em>number</em>-- venue unique id</li>
@@ -114,14 +114,14 @@ class Documentation extends Component {
           <p>This endpoint will return an array that includes all concert objects. Each concert object contains a band , date, and venue property.</p>
           <p>Response:</p>
           <pre><code className="response-code">
-          HTTP / 200 OK <br />
-          "Content-Type": "application/json" <br />
-          "id": 1,
+            HTTP / 200 OK <br />
+            "Content-Type": "application/json" <br />
+            "id": 1,
           "band": "Lucid Vision", <br />
-          "date": "Jan 18, 2019", <br />
-          "venue_id": 2, <br />
-          "created_at": "2019-02-05T14:51:49.389Z", <br />
-          "updated_at": "2019-02-05T14:51:49.389Z"
+            "date": "Jan 18, 2019", <br />
+            "venue_id": 2, <br />
+            "created_at": "2019-02-05T14:51:49.389Z", <br />
+            "updated_at": "2019-02-05T14:51:49.389Z"
           </code></pre>
           <ul>Attributes:
             <li><code className="list-code">id</code> <em>number</em>-- concert unique id</li>
@@ -138,14 +138,14 @@ class Documentation extends Component {
           <p>This endpoint will return an array a single concert. The id of the concert is contained in the path.</p>
           <p>Example Response:</p>
           <pre><code className="response-code">
-          HTTP / 200 OK <br />
-          "Content-Type": "application/json" <br />
-          "id": 1, <br />
-          "band": "Lucid Vision", <br />
-          "date": "Jan 18, 2019", <br />
-          "venue_id": 2, <br />
-          "created_at": "2019-02-05T14:51:49.389Z", <br />
-          "updated_at": "2019-02-05T14:51:49.389Z"
+            HTTP / 200 OK <br />
+            "Content-Type": "application/json" <br />
+            "id": 1, <br />
+            "band": "Lucid Vision", <br />
+            "date": "Jan 18, 2019", <br />
+            "venue_id": 2, <br />
+            "created_at": "2019-02-05T14:51:49.389Z", <br />
+            "updated_at": "2019-02-05T14:51:49.389Z"
           </code></pre>
           <ul>Attributes:
             <li><code className="list-code">id</code> <em>number</em>-- concert unique id</li>
@@ -162,14 +162,14 @@ class Documentation extends Component {
           <p>This endpoint will return an array that includes all concerts that took place at a venue that is specificied by the user. The venue id in the query corresponds to the venue that is specificied. Each concert in the response contains a band , date, and venue property.</p>
           <p>Example Response:</p>
           <pre><code className="response-code">
-          HTTP / 200 OK <br />
-          "Content-Type": "application/json" <br />
-          "concerts": [ <br />
-               
-              "venue_id": 1, <br />
-              "band": "Stanley Jordon", <br />
-              "date": "Jan 18, 2019", <br />
-              "id": 2 ]
+            HTTP / 200 OK <br />
+            "Content-Type": "application/json" <br />
+            "concerts": [ <br />
+
+            "venue_id": 1, <br />
+            "band": "Stanley Jordon", <br />
+            "date": "Jan 18, 2019", <br />
+            "id": 2 ]
           </code></pre>
           <ul>Attributes:
             <li><code className="list-code">concerts</code> <em>array</em>-- an array of concerts by venue</li>
@@ -188,11 +188,11 @@ class Documentation extends Component {
           </p>
           <p>Response:</p>
           <pre><code className="response-code">
-          HTTP / 201 CREATED <br />
-          "Content-Type": "application/json" <br />
-          "name": "Baller Venue", <br />
-          "address": "321 Fake St.", <br />
-          "id": 29
+            HTTP / 201 CREATED <br />
+            "Content-Type": "application/json" <br />
+            "name": "Baller Venue", <br />
+            "address": "321 Fake St.", <br />
+            "id": 29
           </code></pre>
           <ul>Attributes:
             <li><code className="list-code">name</code> <em>string</em>-- venue name</li>
@@ -207,12 +207,12 @@ class Documentation extends Component {
           </p>
           <p>Response:</p>
           <pre><code className="response-code">
-          HTTP / 201 CREATED <br />
-          "Content-Type": "application/json" <br />
-          "band": "Nonos", <br />
-          "date": "Jan. 19, 1999", <br />
-          "venue_id": 1, <br />
-          "id": 139
+            HTTP / 201 CREATED <br />
+            "Content-Type": "application/json" <br />
+            "band": "Nonos", <br />
+            "date": "Jan. 19, 1999", <br />
+            "venue_id": 1, <br />
+            "id": 139
           </code></pre>
           <ul>Attributes:
             <li><code className="list-code">band</code> <em>string</em>-- band name</li>
@@ -232,11 +232,11 @@ class Documentation extends Component {
           </p>
           <p>Example Response:</p>
           <pre><code className="response-code">
-          HTTP / 202 ACCEPTED <br />
-          "Content-Type": "application/json" <br />
-          "name": "The Dive", <br />
-          "address": "123 Dive St.", <br />
-          "id": 1
+            HTTP / 202 ACCEPTED <br />
+            "Content-Type": "application/json" <br />
+            "name": "The Dive", <br />
+            "address": "123 Dive St.", <br />
+            "id": 1
           </code></pre>
           <ul>Attributes:
           <li><code className="list-code">name</code> <em>string</em>-- venue name</li>
@@ -251,12 +251,12 @@ class Documentation extends Component {
           </p>
           <p>Example Response:</p>
           <pre><code className="response-code">
-          HTTP / 202 ACCEPTED <br />
-          "Content-Type": "application/json" <br />
-          "band": "Nononos", <br />
-          "date": "Jan. 20, 1999", <br />
-          "venue_id": 1, <br />
-          "id": 1
+            HTTP / 202 ACCEPTED <br />
+            "Content-Type": "application/json" <br />
+            "band": "Nononos", <br />
+            "date": "Jan. 20, 1999", <br />
+            "venue_id": 1, <br />
+            "id": 1
           </code></pre>
           <ul>Attributes:
             <li><code className="list-code">band</code> <em>string</em>-- band name</li>
@@ -275,9 +275,9 @@ class Documentation extends Component {
           </p>
           <p>Example Response:</p>
           <pre><code className="response-code">
-          HTTP / 202 ACCEPTED <br />
-          "Content-Type": "application/json" <br />
-          "venue": 1
+            HTTP / 202 ACCEPTED <br />
+            "Content-Type": "application/json" <br />
+            "venue": 1
           </code></pre>
           <ul>Attributes:
             <li><code className="list-code">venue</code> <em>number</em>-- venue unique id</li>
@@ -292,9 +292,9 @@ class Documentation extends Component {
           </p>
           <p>Example Response:</p>
           <pre><code className="response-code">
-          HTTP / 202 ACCEPTED <br />
-          "Content-Type": "application/json" <br />
-          "id": 1
+            HTTP / 202 ACCEPTED <br />
+            "Content-Type": "application/json" <br />
+            "id": 1
           </code></pre>
           <ul>Attributes:
             <li><code className="list-code">id</code> <em>number</em>-- concert unique id</li>
