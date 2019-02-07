@@ -69,7 +69,7 @@ class Documentation extends Component {
           <pre><code>/api/v1/venues</code></pre>
           <p>This endpoint will return an array of all venue objects.</p>
           <p>Response:</p>
-          <pre><code>
+          <pre><code className="response-code">
           HTTP / 200 OK <br />
           "Content-Type": "application/json" <br />
           "id": 1,
@@ -91,7 +91,7 @@ class Documentation extends Component {
           <pre><code>/api/v1/venues/:id</code></pre>
           <p>This endpoint will return an array a single venue object. The id of the venue is contained in the path.</p>
           <p>Example Response:</p>
-          <pre><code>
+          <pre><code className="response-code">
           HTTP / 200 OK <br />
           "Content-Type": "application/json" <br />
           "id": 1,
@@ -113,7 +113,7 @@ class Documentation extends Component {
           <pre><code>/api/v1/concerts</code></pre>
           <p>This endpoint will return an array that includes all concert objects. Each concert object contains a band , date, and venue property.</p>
           <p>Response:</p>
-          <pre><code>
+          <pre><code className="response-code">
           HTTP / 200 OK <br />
           "Content-Type": "application/json" <br />
           "id": 1,
@@ -137,7 +137,7 @@ class Documentation extends Component {
           <pre><code>/api/v1/concerts/:id</code></pre>
           <p>This endpoint will return an array a single concert. The id of the concert is contained in the path.</p>
           <p>Example Response:</p>
-          <pre><code>
+          <pre><code className="response-code">
           HTTP / 200 OK <br />
           "Content-Type": "application/json" <br />
           "id": 1, <br />
@@ -161,7 +161,7 @@ class Documentation extends Component {
           <pre><code>/api/v1/concerts?venue=venue_id</code></pre>
           <p>This endpoint will return an array that includes all concerts that took place at a venue that is specificied by the user. The venue id in the query corresponds to the venue that is specificied. Each concert in the response contains a band , date, and venue property.</p>
           <p>Example Response:</p>
-          <pre><code>
+          <pre><code className="response-code">
           HTTP / 200 OK <br />
           "Content-Type": "application/json" <br />
           "concerts": [ <br />
@@ -169,9 +169,7 @@ class Documentation extends Component {
               "venue_id": 1, <br />
               "band": "Stanley Jordon", <br />
               "date": "Jan 18, 2019", <br />
-              "id": 2 <br />
-            
-          ]
+              "id": 2 ]
           </code></pre>
           <ul>Attributes:
             <li><code className="list-code">concerts</code> <em>array</em>-- an array of concerts by venue</li>
@@ -189,7 +187,7 @@ class Documentation extends Component {
           <p>This endpoint allows users to add a new venue to the database. The request must contain a name and address property in order for the post to be successful. If these properties are not included, an error with status code 422 will be returned.
           </p>
           <p>Response:</p>
-          <pre><code>
+          <pre><code className="response-code">
           HTTP / 201 CREATED <br />
           "Content-Type": "application/json" <br />
           "name": "Baller Venue", <br />
@@ -208,7 +206,7 @@ class Documentation extends Component {
           <p>This endpoint allows users to add a new concert to the database to a specific venue. The request must contain a band and date property in order for the post to be successful. If these properties are not included, an error with status code 500 will be returned.
           </p>
           <p>Response:</p>
-          <pre><code>
+          <pre><code className="response-code">
           HTTP / 201 CREATED <br />
           "Content-Type": "application/json" <br />
           "band": "Nonos", <br />
@@ -233,7 +231,7 @@ class Documentation extends Component {
           <p>This endpoint allows users to update an existing venue in the database. The request should contain a name and address property.
           </p>
           <p>Example Response:</p>
-          <pre><code>
+          <pre><code className="response-code">
           HTTP / 202 ACCEPTED <br />
           "Content-Type": "application/json" <br />
           "name": "The Dive", <br />
@@ -252,7 +250,7 @@ class Documentation extends Component {
           <p>This endpoint allows users to update an existing concert in the database. The request should contain a band and date property.
           </p>
           <p>Example Response:</p>
-          <pre><code>
+          <pre><code className="response-code">
           HTTP / 202 ACCEPTED <br />
           "Content-Type": "application/json" <br />
           "band": "Nononos", <br />
@@ -276,7 +274,7 @@ class Documentation extends Component {
             This endpoint allows users to delete an existing venue in the database. The id of the venue to be deleted is a params of the request. If there is an error, a response with status 501 should be returned.
           </p>
           <p>Example Response:</p>
-          <pre><code>
+          <pre><code className="response-code">
           HTTP / 202 ACCEPTED <br />
           "Content-Type": "application/json" <br />
           "venue": 1
