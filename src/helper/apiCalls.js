@@ -72,8 +72,8 @@ export const postVenue = async (venue) => {
   }
 }
 
-export const postConcert = async (concert) => {
-  const url = 'https://byob-concerts.herokuapp.com/api/v1/concerts';
+export const postConcert = async (concert, venueId) => {
+  const url = `https://byob-concerts.herokuapp.com/api/v1/venues/${venueId}/concerts`;
   const response = await fetch(url, {
     method: 'POST',
     headers: {
