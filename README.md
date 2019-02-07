@@ -21,7 +21,7 @@ this has also been hosted on [heroku](https://byob-frontend.herokuapp.com)
 - create-react-app
 
 ## Authors
-Tanjie McMeans [@TMcMeans](https://github.com/TMcMeans) - Documentation Site
-Ashton Bailey [@ashtonkbailey](https://github.com/ashtonkbailey) - Documentation Site
-Cole Vanacore [@colev1](https://github.com/colev1) - API
-Kaylee Bunce [@kayleenovak](https://github.com/kayleenovak)
+- Tanjie McMeans [@TMcMeans](https://github.com/TMcMeans) - Documentation Site
+- Ashton Bailey [@ashtonkbailey](https://github.com/ashtonkbailey) - Documentation Site
+- Cole Vanacore [@colev1](https://github.com/colev1) - API
+- Kaylee Bunce [@kayleenovak](https://github.com/kayleenovak)
